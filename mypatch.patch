@@ -1,0 +1,25 @@
+diff --git a/README.md b/README.md
+index a7ba76b..c9cc814 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,3 @@
+-# RunTimePermissionTest
+\ No newline at end of file
++# RunTimePermissionTest
++
++This is simple example to test Runtime permission in android 6 and above android devices 
+diff --git a/app/src/main/java/com/example/vikash/runtimepermissiontest/MainActivity.java b/app/src/main/java/com/example/vikash/runtimepermissiontest/MainActivity.java
+index 85fdf44..db0f47b 100644
+--- a/app/src/main/java/com/example/vikash/runtimepermissiontest/MainActivity.java
++++ b/app/src/main/java/com/example/vikash/runtimepermissiontest/MainActivity.java
+@@ -54,7 +54,10 @@ public class MainActivity extends AppCompatActivity {
+ 
+     }
+ 
++    // callMe handle button pressed event.
++
+     public void callMe(View v) {
++        //check if CALL_PHONE permission is granted only then allow to call
+         Log.v("TAG ","call me called");
+         if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE)
+                 != PackageManager.PERMISSION_GRANTED) {

@@ -1,0 +1,25 @@
+From bd43853b41fbb0ffe225bb565cf533b7e363ae8d Mon Sep 17 00:00:00 2001
+From: vkdinventor <vkdinventor@gmail.com>
+Date: Wed, 6 Jul 2016 15:45:46 +0530
+Subject: [PATCH] this is second patch
+
+---
+ .../java/com/example/vikash/runtimepermissiontest/MainActivity.java     | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/app/src/main/java/com/example/vikash/runtimepermissiontest/MainActivity.java b/app/src/main/java/com/example/vikash/runtimepermissiontest/MainActivity.java
+index db0f47b..0b3bda3 100644
+--- a/app/src/main/java/com/example/vikash/runtimepermissiontest/MainActivity.java
++++ b/app/src/main/java/com/example/vikash/runtimepermissiontest/MainActivity.java
+@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
+ 
+     }
+ 
+-    // callMe handle button pressed event.
++    
+ 
+     public void callMe(View v) {
+         //check if CALL_PHONE permission is granted only then allow to call
+-- 
+1.9.1
+
